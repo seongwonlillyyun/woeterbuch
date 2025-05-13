@@ -14,7 +14,7 @@ const Main = () => {
   const [result, setResult] = useState<Word | null>(null);
 
         useEffect(()=>{
-            fetch("https://seongwonlillyyun.github.io/words.json")
+            fetch("/words.json")
                 .then((res)=>res.json())
                 .then((data)=>setWordList(data));
         },[])
