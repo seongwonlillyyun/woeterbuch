@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;     
+  gap: 20px;             
+  padding-top: 10px;     
+}
+.img{
+    height: 300px;
+}
+.title{
+    text-align: center;
+    font-size: 40px;
+}
+.searchbox{
+    display: flex;
+}
+.searchbox input{
+    height: 30px;
+    width: 350px;
+    text-align: center;
+}
+.searchbox button{
+    height: 35px;
+    width: 80px;
+    margin-left: 10px;
+}
+@media screen and (max-width: 768px) {
+  .searchbox{
+
+    align-items: center;
+    width: 95%;
+    height: 50px;
+  }
+  .searchbox input{
+    height: 30px;
+  }
+
+.img{
+    margin-top: 10px;
+    width: 98%
+}
+
+}
