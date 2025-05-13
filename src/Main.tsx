@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import {Searchbar} from './Components/Searchbar';
 import { useState } from 'react';
 import './page.css'
+import wordsData from './data/words.json';
 
 interface Word {
     word:string;
@@ -10,14 +11,9 @@ interface Word {
 }
 const Main = () => {
   const [query, setQuery] = useState('')
-  const [wordList, setWordList] = useState<Word[]>([]);
+  const [wordList, setWordList] = useState<Word[]>(wordsData);
   const [result, setResult] = useState<Word | null>(null);
 
-        useEffect(()=>{
-            fetch("/data/words.json")
-                .then((res)=>res.json())
-                .then((data)=>setWordList(data));
-        },[])
          const handleSearch = () => {
             const found = wordList.find(
                 (entry) => entry.word.toLowerCase() === query.toLowerCase()
@@ -40,11 +36,11 @@ return(
            {result && (
         <div className="mt-4 text-center">
           <p>
-            <strong>단어:</strong> {result.article ? `${result.article} ` : ""}
+            <strong>단어 : </strong> {result.article ? `${result.article} ` : ""}
             {result.word}
           </p>
           <p>
-            <strong>뜻:</strong> {result.meaning}
+            <strong>뜻 : </strong> {result.meaning}
           </p>
         </div>
       )}
