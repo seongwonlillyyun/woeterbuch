@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import {Searchbar} from './Components/Searchbar';
 import { useState } from 'react';
 import './page.css'
-import wordsData from '../data/words.json';
+import wordsData from './data/words.json';
 
 interface Word {
     word:string;
