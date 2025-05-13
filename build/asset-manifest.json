@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/woeterbuch/static/css/main.3929312d.css",
+    "main.js": "/woeterbuch/static/js/main.754e04c7.js",
+    "index.html": "/woeterbuch/index.html",
+    "main.3929312d.css.map": "/woeterbuch/static/css/main.3929312d.css.map",
+    "main.754e04c7.js.map": "/woeterbuch/static/js/main.754e04c7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3929312d.css",
+    "static/js/main.754e04c7.js"
+  ]
+}
